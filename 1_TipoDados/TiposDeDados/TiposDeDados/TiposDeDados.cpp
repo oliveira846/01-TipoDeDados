@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	cout << "Estrutura de Dados - Fatec (2026/2)" << endl;
+	/* cout << "Estrutura de Dados - Fatec (2026/2)" << endl;
 
 	
 	cout << "Tipos Numericos\n";
@@ -72,8 +72,38 @@ int main()
 	cout << "Sua idade em minutos e: " << minutos << endl;
 
 	cout << "Qualquer tecla para sair...";
-	system("pause"); // somente no Windows
+	system("pause"); // somente no Windows 
 
+	#include <climits>
+	cout << "int  max = " << INT_MAX + 1  << "\n";
+	cout << "int  min = " << INT_MIN << "\n";
+	cout << "short max = " << SHRT_MAX << "\n"; 
+
+	double temperaturac = 0;
+	
+	cout << "Digite a temperatura: ";
+	cin >> temperaturac;
+
+	double fahrenheit = temperaturac * 1.8 + 32;
+
+	cout << "A temperatura em Fahrenheit é:" << fahrenheit << endl;
+
+	double kelvin = temperaturac + 273.15;
+
+	cout << "A temperatura em Kelvin é:" << kelvin; */
+
+	long segundos = 0;
+
+	cout << "Digite o número de segundos:";
+	cin >> segundos;
+	
+	int dias = segundos / 86400;
+	int horas = segundos / 3600;
+	int minutos = segundos / 60;
+	int segrestantes = dias % segundos; 
+
+
+	cout << "A quantidade de dias seria " << dias << "\na quantidade de horas seria " << horas << "\na quantidade de minutos seria "<< minutos << "\ne os segundos restantes seria " << segrestantes;
 
 }
 
