@@ -90,7 +90,7 @@ int main()
 
 	double kelvin = temperaturac + 273.15;
 
-	cout << "A temperatura em Kelvin é:" << kelvin; */
+	cout << "A temperatura em Kelvin é:" << kelvin; 
 
 	long segundos = 0;
 
@@ -104,6 +104,18 @@ int main()
 
 
 	cout << "A quantidade de dias seria " << dias << "\na quantidade de horas seria " << horas << "\na quantidade de minutos seria "<< minutos << "\ne os segundos restantes seria " << segrestantes;
+	*/
 
+	int numero1 = 5;
+
+	cout << "o número e " << numero1 << endl;
+	cout << "Endereço da variavel é: " << &numero1 << endl;
+	
+	int* ponteiro = &numero1;
+
+	*ponteiro = numero1 * 2;
+
+	cout << "O novo valor do numero: " << numero1 << endl;
+	
 }
 
